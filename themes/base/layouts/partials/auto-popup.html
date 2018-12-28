@@ -1,0 +1,53 @@
+
+
+<div id="myModal" class="modal modal-wide fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/images/doc1.png" class="popup-image" alt="Hola Documentation">
+          </div>  
+          <div class="col-md-8">
+            <h4 class=""> <b>Get free guide on how to use Digital Technology to communicate better with your audience and market healthcare product.</b></h4>
+            <!-- Begin MailChimp Signup Form --> 
+<form name="submit-to-google-sheet">
+                
+                  <div class="">
+                   <input name="firstname" type="text" id="firstname" class="form-control popup-input " placeholder="First Name" required>
+                 </div>
+                 <div class="">
+              <input name="email" type="email" id="email"  class="form-control popup-input" placeholder="Your E-Mail..." required>
+             </div>
+                <button  class="popup-button" type="submit">Get Access Now >> </button>
+            
+              
+           
+            </form>
+
+          </div>  
+        </div>
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz7f_eB7E-0O9laNQxHjfboo3nMxYVNKRwMMrRBcU2Bepc_8K7h/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+
+    e.preventDefault()
+    
+   swal({ title: "Thankyou for subscribing", imageUrl: '/images/success.png', text: "Download <u><a href='/pharma-give-away.pdf' style='color:#4285f4' download>Here<a></u>", html: true });
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+</script>

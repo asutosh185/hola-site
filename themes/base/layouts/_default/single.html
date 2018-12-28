@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "common/meta.html" . }}
+    <title>{{ .Title }}</title>
+    <meta name="description" content="Read about interactive media, animation, hola cards on hola enterprise, world's simplest interactive video creation platform.">
+     {{ partial "common/favicon.html" . }}
+    {{ partial "common/styles.html" . }}
+    
+    <!-- Hotjar Tracking Code for holaenterprise.com --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:509831,hjsv:5}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv='); </script>
+</head>
+<body>
+
+        {{ partial "navbar.html" . }}
+    <main>
+      <div class="container">
+        <div class="row bg-white">
+  
+  <div class="col-md-8 col-md-offset-2 m-b-r wow fadeInRight" data-wow-delay="0.2s">
+    <h5 class="red-text "></h5>
+    <h4 class="blog-li-title blog-post-title">{{ .Title }}</h4>
+    <div class= "row p-t-20">
+    <p class="col-md-9 posted-by">by
+      <a class="posted-by">Sravan Kumar Narasipuram</a>. Posted on {{ .Date.Format "Jan 2, 2006" }}</p>
+
+      <div class="col-md-3 social-icons">
+     {{ partial "services/social.html" . }}
+    
+      </div>
+      </div>
+       <a href="{{ .URL }}"><img class="blog-li-img" src="{{ .Site.BaseURL}}{{ .Params.banner }}"></a>
+
+    <div class="blog-li-desc blog-content">
+      {{ .Content }}
+    </div>
+     <div class="text-center">
+    <a href="mailto:info@holaenterprise.com" target="_blank" class="holabtn wow fadeInUp text-center mt-3">Know more</a>
+    </div>
+     {{ partial "disqus.html" . }}
+   
+        
+  </div>
+
+</div>
+
+      
+    {{partial "footer"}}
+      </div>
+     
+    </main>
+    {{ partial "common/scripts.html" .}}
+   
+
+ {{ if .Site.Params.ga_id }}
+      {{ partial "services/ga" . }}
+    {{ end }}
+   {{ if .Site.Params.crisp_id }}
+      {{ partial "services/crisp" . }}
+    {{ end }}
+  
+
+
+</body>
+</html>

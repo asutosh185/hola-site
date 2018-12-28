@@ -1,0 +1,18 @@
+<div class="portfolio-item grow {{ .category }}">
+    <div class="inner-content">
+        <div class="portfolio-content">
+            <div class="portfolio-detail">
+                <a href= {{ printf "%s" .holalink }} target="frame1">
+                    <div class="portfolio-text">
+                       
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img src="{{ .image }}" alt="{{ .clienttitle}}" class="img-responsive" />
+    </div>
+    <div class="p-text">
+     <h4>{{ .clienttitle }}</h4>
+     <p>{{ .slidedescription }}</p>
+    </div>
+</div>

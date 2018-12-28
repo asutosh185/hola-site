@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if not .IsHome }}{{ .Site.Params.BlogDescription }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}">
+<meta name="keywords" content="animation marketing,animated video production,explainer video,increase roi,explainer video production,animated explainer videos,push marketing,content marketing,e marketing,email campaign,startup explainer videos,marketing campaign,product video producer,analytics,infographic maker,business animation,marketing tools,animated video maker,channel marketing,digital marketing,email services,email marketing tracking,digital marketing video,digital marketing for startup,video card,social media marketing,Hola enterprise,abda digitals,hola cards,corporate video production, interactive, videos, animation, product, explainer, conversion">
+
+<!-- open graph -->
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="{{ .Description }}"/>
+<meta property="og:title" content="Hola Enterprise - Reach,Engage, Analyze"/>
+<meta property="og:site_name" content="Hola cards"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}"/>
+<meta property="article:modified_time" content="{{ .Date.Format "2006-01-02" }}"/>
+
+
+{{if .Keywords }}
+{{ range .Keywords }}<meta property="article:tag" content="{{ . }}">
+{{ end }}
+{{else if isset .Params "tags" }}
+{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">
+{{ end }}
+{{end}}
+
+<!--Twitter Cards-->
+<meta name="twitter:card" content="summary">
+<!--<meta name="twitter:card" content="summary_large_image">-->
+<meta name="twitter:site" content="@Hola_Card">
+<meta name="twitter:title" content="{{ .Site.Params.Title }}">
+<meta name="twitter:creator" content="@Hola_Card">
+<meta name="twitter:description" content="{{ .Description }}">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="holaenterprise.com">
+<meta name="generator" content="Gurujada">

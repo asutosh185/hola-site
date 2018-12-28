@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{ partial "blogmeta.html" . }}
+    <title>Blog | Hola Enterprise</title>
+   
+    {{ partial "common/styles.html" . }}
+<!-- Hotjar Tracking Code for holaenterprise.com --> <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:509831,hjsv:5}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv='); </script>
+</head>
+
+
+<body class="fixed-sn green-skin">
+        {{ partial "navbar.html" . }}
+    <main>
+      <div class="container">
+        <section class="section extra-margins bg-white">
+          {{ range .Data.Pages }}
+          {{ .Render "li" }}
+          {{ end }}
+        </section>
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+    {{ partial "common/scripts.html" .}}
+    {{ if .Site.Params.ga_id }}
+      {{ partial "services/ga" . }}
+    {{ end }}
+   {{ if .Site.Params.crisp_id }}
+      {{ partial "services/crisp" . }}
+    {{ end }}
+</body>
+</html>

@@ -1,0 +1,26 @@
+    <script src="/js/jquery-2.2.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+   
+    <script src="/js/jquery.sticky.min.js"></script>
+     <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/jquery.flexslider-min.js"></script>
+       <script src="/js/main.js"></script>
+       <script src="/js/jquery.sweet-alert.custom.js"></script>
+       <script src="/js/sweetalert.min.js"></script>
+<script id="dsq-count-scr" src="//www-holaenterprise-com.disqus.com/count.js" async></script>
+<script>
+   jQuery('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+
+    jQuery(".fancybox-close").click(function() {
+      // changes the iframe src to prevent playback or stop the video playback in our case
+      $('.youtube-iframe').each(function(index) {
+        $(this).attr('src', $(this).attr('src'));
+        return false;
+      });
+      
+//click function
+    });
+
+</script>

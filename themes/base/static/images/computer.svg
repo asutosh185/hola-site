@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="60px" viewBox="0 0 85 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.0-–-Homepage" transform="translate(-154.000000, -2800.000000)" fill-rule="nonzero">
+            <g id="Solutions" transform="translate(0.000000, 2339.000000)">
+                <g id="#1-copy-2" transform="translate(154.000000, 461.000000)">
+                    <g id="002-computer">
+                        <polygon id="Shape" fill="#A185FA" points="11.4334807 47.2246409 28.5026519 47.2246409 28.5026519 9.98287293"></polygon>
+                        <polygon id="Shape" fill="#A185FA" points="5.84154696 0.0144198895 5.84154696 46.9553039 27.3561878 0.0144198895"></polygon>
+                        <path d="M33.6982873,0.0144198895 L33.6982873,47.2246409 L79.0201657,47.2246409 L79.0201657,0.0144198895 L33.6982873,0.0144198895 Z M60.031326,35.3983425 L51.4907735,26.8577901 L52.5223757,31.8265193 L47.4353039,32.8828177 L43.831326,15.5247514 L61.189558,19.1285635 L60.1330939,24.2158011 L55.1645304,23.1843646 L63.7050829,31.7247514 L60.031326,35.3983425 Z" id="Shape" fill="#845DFD"></path>
+                        <rect id="Rectangle-path" fill="#845DFD" x="0" y="52.4194475" width="84.8618785" height="7.56596685"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

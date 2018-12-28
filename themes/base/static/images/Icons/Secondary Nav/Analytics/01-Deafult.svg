@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14.25" height="14.25"></rect>
+        <path d="M15.75,0 L30,0 L30,30 L15.75,30 L15.75,0 Z M0,15.75 L15.75,15.75 L15.75,30 L0,30 L0,15.75 Z" id="path-3"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.0-–-Homepage" transform="translate(-837.000000, -3797.000000)">
+            <g id="How-it-works" transform="translate(0.000000, 3002.000000)">
+                <g id="Group-2" transform="translate(570.000000, 788.000000)">
+                    <g id="Abalytics" transform="translate(224.000000, 0.000000)">
+                        <g id="Icons-/-Secondary-Nav-/-Analytics-/-01-Deafult" transform="translate(36.000000, 0.000000)">
+                            <g id="Oval" transform="translate(7.500000, 7.500000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <circle fill="#AAB7C4" mask="url(#mask-2)" cx="15" cy="15" r="15"></circle>
+                            </g>
+                            <g id="Oval-Copy" transform="translate(7.500000, 7.500000)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <circle fill="#425070" mask="url(#mask-4)" cx="15" cy="15" r="15"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

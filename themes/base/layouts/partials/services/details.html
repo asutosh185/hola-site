@@ -1,0 +1,17 @@
+{{ $baseurl := .Site.BaseURL }}
+
+  <div class="container details">
+    <div class="row">
+      <div class="columns">
+      <div class="columns is-10 is-offset-1">
+        <ul id="tags">
+          {{ range .Params.tags }}
+          <li>
+            <a href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

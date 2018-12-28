@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0.0-–-Homepage" transform="translate(-544.000000, -2800.000000)">
+            <g id="Solutions" transform="translate(0.000000, 2339.000000)">
+                <g id="#1-copy-3" transform="translate(544.000000, 461.000000)">
+                    <g id="001-city">
+                        <path d="M0,60 L30,60 L30,0 L0,0 L0,60 Z M18.75,7.5 L26.25,7.5 L26.25,15 L18.75,15 L18.75,7.5 Z M18.75,22.5 L26.25,22.5 L26.25,30 L18.75,30 L18.75,22.5 Z M18.75,37.5 L26.25,37.5 L26.25,45 L18.75,45 L18.75,37.5 Z M3.75,7.5 L11.25,7.5 L11.25,15 L3.75,15 L3.75,7.5 Z M3.75,22.5 L11.25,22.5 L11.25,30 L3.75,30 L3.75,22.5 Z M3.75,37.5 L11.25,37.5 L11.25,45 L3.75,45 L3.75,37.5 Z" id="Shape" fill="#7EDE94" fill-rule="nonzero"></path>
+                        <polygon id="Path" fill="#9FF1A2" points="33.75 18.75 60 18.75 60 22.5 33.75 22.5"></polygon>
+                        <polygon id="Path" fill="#9FF1A2" points="33.75 60 41.25 60 41.25 45 52.5 45 52.5 60 60 60 60 26.25 33.75 26.25"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

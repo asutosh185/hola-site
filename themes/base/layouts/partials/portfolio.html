@@ -1,0 +1,52 @@
+  <div class="half-header port">
+    <div class="col-md-11 col-md-offset-1">
+    <h1 style="margin-top:10%; margin-bottom:5%;">Portfolio</h1>
+    </div>
+     <div class="row">
+                <div class="col-md-9 col-md-offset-1">
+                    <div class="filter-portfolio">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" data-filter="*" class="btn btn-rj ">All</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".hospitals" class="btn btn-rj">Hospitals And Pharma</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".food" class="btn btn-rj">Food and Beverage </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".real" class="btn btn-rj">Real Estate and Jewellery</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".school" class="btn btn-rj">Schools and Education </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".telecom" class="btn btn-rj">Telecom and MNO </a>
+                            </li>
+                            <li class="active">
+                                <a href="#" data-filter=".gulf" class="btn btn-rj disabled">Gulf</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+</div>
+<section id="our-latest-work" class="section bg-white">
+    <div class="section-inner">
+        <div class="section-content">
+           
+           
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="popup-portfolio">
+                      {{ range .Site.Params.portfolio }}
+                        {{ partial "singleportfolio.html" . }}
+                      {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

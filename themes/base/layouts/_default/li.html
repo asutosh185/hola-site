@@ -1,0 +1,23 @@
+<div class="row">
+  
+  <div class="col-md-8 col-md-offset-2 m-b-r wow fadeInRight" data-wow-delay="0.2s">
+    <h5 class="red-text "></h5>
+    <a href="{{ .URL }}"><h4 class="blog-li-title">{{ .Title }}</h4></a>
+    <div class= "row p-t-20">
+    <p class="col-md-9 posted-by">by
+      <a class="posted-by">Sravan Kumar Narasipuram</a>. Posted on {{ .Date.Format "Jan 2, 2006" }}</p>
+      <div class="col-md-3 social-icons">
+      {{ partial "services/social.html" . }}
+      </div>
+      </div>
+       <a href="{{ .URL }}"><img class="blog-li-img" src="{{ .Site.BaseURL}}{{ .Params.banner }}" alt="{{ .Params.bannertitle }}"></a>
+    <p class="blog-li-desc">
+      {{ .Summary }}
+    </p>
+    
+    <a href="{{ .URL }}" class="">Read more <img src="/images/arrow-right.svg" alt="arrow" /> </a>
+    
+  <hr>
+  </div>
+
+</div>
